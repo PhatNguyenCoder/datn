@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Đặt biến màu */
+:root {
+  --primary-color: #000000; /* Màu nền header */
+  --second-color: #ffff;
+}
+
+header,
+.banner {
+  background-color: var(--primary-color);
+}
+
+.header-icon {
+  color: var(--second-color);
+}
+
+/* Đặt kích thước logo */
+.logo-img {
+  width: 179px;
+  height: 179px;
+  object-fit: cover;
+}
+
+/* Định dạng các liên kết trong menu */
+nav {
+  background-color: var(--primary-color);
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--second-color);
+  font-size: 16px;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+/* GIỚI THIỆU */
+.slide-enter {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.slide-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 500ms ease-out, opacity 500ms ease-out;
+}
+
+.slide-exit {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide-exit-active {
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: transform 500ms ease-out, opacity 500ms ease-out;
+}
+
+/* BANNER */
+.banner-content {
+  color: var(--second-color);
+  margin-left: 100px;
+}
+
+.banner-title {
+  font-size: 36px;
+}
+
+.banner-describe {
+  font-size: 24px;
+  width: 500px;
+}
+
+.banner-price {
+  font-size: 24px;
+}
+
+.banner-button {
+  width: 102px;
+  height: 45px;
+}
+
+/* PRODUCT SELL */
+.product-sell .boxsp {
+  width: 261.2px;
+  height: 500px;
+}
+
+.product-sell .boxsp-img {
+  width: 261.2px;
+  height: 300px;
+}
+
+.boxsp-discount {
+  width: 35.74px;
+  height: 24px;
+  background-color: rgb(243, 159, 159);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: red;
+  font-weight: bold;
+}
+
+.boxsp .boxsp-static {
+  font-size: 12px;
+}
+
+/* DANH MỤC VÀ THƯƠNG HIỆU */
+.trademark {
+  max-width: 100%;
+  height: auto;
+}
+
+.trademark:hover {
+  border: 1px #949393 solid;
+  border-radius: 20px;
+}
+
+/* OFFER */
+.offer-img {
+  width: 427px;
+  height: 367px;
+  border-radius: 30px;
+}
+
+/* FOOTER */
+.logo2 {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CART */
+.cart-img {
+  width: 348px;
+  height: 364px;
+}
+
+.closeCart {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  background: none;
+  border: none;
+}
+
+.button-cart {
+  width: 200px;
+  background-color: var(--primary-color);
+  color: var(--second-color);
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.img-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.boxsp-img {
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.boxsp-img:hover {
+  transform: scale(1.1);
+}
