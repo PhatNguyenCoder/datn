@@ -40,29 +40,6 @@ nav {
   list-style: none;
 }
 
-/* GIỚI THIỆU */
-.slide-enter {
-  transform: translateY(-20px);
-  opacity: 0;
-}
-
-.slide-enter-active {
-  transform: translateY(0);
-  opacity: 1;
-  transition: transform 500ms ease-out, opacity 500ms ease-out;
-}
-
-.slide-exit {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.slide-exit-active {
-  transform: translateY(-20px);
-  opacity: 0;
-  transition: transform 500ms ease-out, opacity 500ms ease-out;
-}
-
 /* BANNER */
 .banner-content {
   color: var(--second-color);
