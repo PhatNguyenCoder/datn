@@ -16,6 +16,14 @@ header,
 
 .header-icon {
   color: var(--second-color);
+  font-size: 26px;
+}
+
+.header-icon .bi-search:hover,
+.header-icon .bi-cart-fill:hover,
+.header-icon .bi-person-fill:hover,
+.header-contact:hover {
+  opacity: 0.8;
 }
 
 /* Đặt kích thước logo */
@@ -28,6 +36,10 @@ header,
 /* Định dạng các liên kết trong menu */
 nav {
   background-color: var(--primary-color);
+}
+
+nav ul li:hover {
+  opacity: 0.8;
 }
 
 .nav-list a {
@@ -113,6 +125,10 @@ nav {
 .logo2 {
   max-width: 100%;
   height: auto;
+}
+
+.footer-dm:hover {
+  text-decoration: underline;
 }
 
 /* CART */

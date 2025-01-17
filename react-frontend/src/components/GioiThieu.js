@@ -27,7 +27,11 @@ export default function GioiThieu() {
             <img
               src="../../images/gioithieuanh1.jpg"
               alt=""
-              style={{ width: "792px", height: "441px", marginLeft: "15px" }}
+              style={{
+                width: "752px",
+                height: "441px",
+                marginLeft: "35px",
+              }}
             />
           </div>
         </div>
@@ -40,7 +44,7 @@ export default function GioiThieu() {
             />
           </div>
           <div className="col-8">
-            <div className="ms-3">
+            <div className="ms-5">
               <h3 className="fw-normal mb-4">
                 Vì sao 55 Perfume xứng đáng để đồng hành với bạn trên con đường
                 trải nghiệm những cảm xúc mùi hương đầy thú vị này

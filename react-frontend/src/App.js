@@ -50,6 +50,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/gioithieu" element={<GioiThieu />} />
             <Route path="/sreach" element={<Sreach />} />
+            <Route path="/dm" element={<Nuochoanam />} />
 
             {/* Các Route khác */}
             <Route

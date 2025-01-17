@@ -46,7 +46,9 @@ export default function Cart() {
                 </div>
                 <div className="d-flex gap-5">
                   <p>{discountedPrice.toLocaleString()} đ</p>
-                  <del>{price.toLocaleString()} đ</del>
+                  <del className="visually-hidden">
+                    {price.toLocaleString()} đ
+                  </del>
                 </div>
 
                 <p>

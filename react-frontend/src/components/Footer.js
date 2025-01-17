@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
       <footer>
@@ -9,15 +17,21 @@ export default function Footer() {
             <div class="row align-items-start">
               <div class="col d-flex justify-content-center align-items-center ">
                 <img src="./images/shipping.webp" alt="" />
-                <p className="text-white">100% Nhập khẩu chính hãng</p>
+                <p className="text-white ms-1">100% Nhập khẩu chính hãng</p>
               </div>
               <div class="col d-flex justify-content-center align-items-center ">
                 <img src="./images/samples.webp" alt="" />
-                <p className="text-white">Nhận mẫu thử miễn phí</p>
+                <p className="text-white ms-2">Nhận mẫu thử miễn phí</p>
               </div>
               <div class="col d-flex justify-content-center align-items-center ">
-                <img src="./images/complimentary-engraving_v3.webp" alt="" />
-                <p className="text-white">Quà tặng kèm & Ưu đãi đặc biệt</p>
+                <img
+                  src="./images/complimentary-engraving_v3.webp"
+                  alt=""
+                  style={{ width: "100px", height: "100px" }}
+                />
+                <p className="text-white ms-2">
+                  Quà tặng kèm & Ưu đãi đặc biệt
+                </p>
               </div>
             </div>
           </div>
@@ -42,13 +56,45 @@ export default function Footer() {
               <div class="col-2 p-3 mt-4">
                 <h6 className="text-start">NƯỚC HOA</h6>
                 <div
-                  className="text-start lh-sm mt-4"
+                  className="text-start lh-sm mt-4 "
                   style={{ fontSize: "14px" }}
                 >
-                  <p>Nước hoa nam</p>
-                  <p>Nước hoa nữ</p>
-                  <p>Nước hoa Unisex</p>
-                  <p>Nước hoa Mini</p>
+                  <p className="footer-dm">
+                    <Link
+                      to={"/dm"}
+                      className="text-decoration-none text-black"
+                      onClick={scrollTop}
+                    >
+                      Nước hoa nam
+                    </Link>
+                  </p>
+                  <p className="footer-dm">
+                    <Link
+                      to={"/dm"}
+                      className="text-decoration-none text-black"
+                      onClick={scrollTop}
+                    >
+                      Nước hoa nữ
+                    </Link>
+                  </p>
+                  <p className="footer-dm">
+                    <Link
+                      to={"/dm"}
+                      className="text-decoration-none text-black"
+                      onClick={scrollTop}
+                    >
+                      Nước hoa unisex
+                    </Link>
+                  </p>
+                  <p className="footer-dm">
+                    <Link
+                      to={"/dm"}
+                      className="text-decoration-none text-black"
+                      onClick={scrollTop}
+                    >
+                      Nước hoa mini
+                    </Link>
+                  </p>
                 </div>
               </div>
               <div class="col-4 p-3 mt-4">
